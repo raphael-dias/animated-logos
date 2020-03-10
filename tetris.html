@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris</title>
+</head>
+<body>
+    <section id="center">
+
+        <h1>TETR<div id='i'>I</div><div id='s'>S</div></h1>
+
+    </section>
+</body>
+<style>
+    body{
+        display: inline;
+        animation-name: blinke ;
+        animation-duration: 3600s;
+        animation-delay: 3.2s;
+
+    }
+    @keyframes blinke {
+        0% {color:white;}
+        /* 50% {color: rgb(223, 142, 142);} */
+        /* 2% {color: white;} */
+    }
+    #center{
+        padding: calc(100 - 100);
+        height: 100px;
+        width: 04.6%;
+        /* background-color: yellow; */
+        font-size: 4rem;
+    }
+    #i{
+        margin-left: 260px;
+        margin-top: -112px;
+        /* background-color: black; */
+        height: 4rem;
+        width: 15px;
+        position: relative;
+        animation-name: example;
+        animation-duration: 3s;
+        animation-delay: 0.2s;
+
+    }
+    @keyframes example {
+        0%   {color:green;left:0px; top:-200px;}
+        25%  {color:green;left:0px;}     
+        50%  {color:red;left:0px; }
+        75%  {color:red;left:0px; }
+        100% {color:blue;left:0px; top:0px;}
+    }
+    #s{
+        background-color: blue;
+        margin-left: 295px;
+        margin-top: -65px;
+    }
+</style>
+</html>
